@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/build/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/build/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Price</title>
+    <meta name='keywords' content='' />
+    <meta name='description' content='' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="assets/js/swiper-bundle.min.js" defer></script> 
+    <script src="assets/js/fancybox.min.js" defer></script> 
+    <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wraper-header">
+        <div class="header__container">
+            <div class="container__logo">
+                <img class="logo__images" src="assets/img/icons/logo.png" alt="Логотип">
+                <span class="logo__certificate header-text">Лицензия: Л041-01050-61/0034798</span>
+                <span class="logo__grafick">График работы: круглосуточно</span>
+            </div>
+            <div class="container__header-item">
+                <div class="header-item__contact">
+                    <span class="contact__title header-text">Анонимная запись по телефону</span>
+                    <a class="phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <a class="phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                </div>
+                <div class="header-item__contact">
+                    <span class="contact__title header-text">Бригад на линии 8</span>
+                    <span class="contact__sub-title header-text">Вызов врача в течении 5 минут</span>
+                    <button class="standart-btn btn">Вызвать врача на дом</button>
+                </div>
+                <div class="header-item__contact">
+                    <span class="contact__sub-title addres header-text">
+                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.19C5.37588 6.19 6.1006 5.514 6.1006 4.697C6.1006 3.88 5.37588 3.204 4.5 3.204C3.62412 3.204 2.8994 3.88 2.8994 4.697C2.8994 5.514 3.62412 6.19 4.5 6.19ZM4.5 0.5C7.00649 0.5 9 2.359 9 4.6975C9 7.8525 4.5 12.5 4.5 12.5C4.5 12.5 0 7.852 0 4.6975C0 2.3595 1.99297 0.5 4.5 0.5Z" fill="#32D583"/>
+                        </svg>
+                        Адрес контакт-центра
+                    </span>
+                    <span class="contact__sub-title addres header-text">
+                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.19C5.37588 6.19 6.1006 5.514 6.1006 4.697C6.1006 3.88 5.37588 3.204 4.5 3.204C3.62412 3.204 2.8994 3.88 2.8994 4.697C2.8994 5.514 3.62412 6.19 4.5 6.19ZM4.5 0.5C7.00649 0.5 9 2.359 9 4.6975C9 7.8525 4.5 12.5 4.5 12.5C4.5 12.5 0 7.852 0 4.6975C0 2.3595 1.99297 0.5 4.5 0.5Z" fill="#32D583"/>
+                        </svg>  
+                        г.Ростов-на-Дону, ул. Крауля 56
+                    </span>
+                    <button class="standart-btn btn">Рассчитать стоиомсть</button>
+                </div>
+                <div class="header-item__contact">
+                    <span class="contact__title header-text">Остались вопросы?</span>
+                    <span class="contact__sub-title header-text">Отвечаем в течении 15 минут</span>
+                    <button class="standart-btn btn">Задать вопрос</button>
+                </div>
+                <div class="header-item__contact">
+                    <a class="social__btn whatsApp" href="#">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0019 3.22056C11.4821 2.69736 10.8637 2.2825 10.1824 2.00002C9.50116 1.71754 8.77062 1.57306 8.03313 1.57493C4.94063 1.57493 2.42313 4.09181 2.42188 7.18556C2.42188 8.17431 2.68 9.13931 3.17062 9.99056L2.375 12.8974L5.34937 12.1168C6.17212 12.5647 7.09387 12.7995 8.03062 12.7999H8.03313C11.125 12.7999 13.6425 10.2831 13.6438 7.18931C13.6459 6.45211 13.5019 5.7218 13.22 5.04059C12.9382 4.35939 12.5242 3.74079 12.0019 3.22056ZM8.03313 11.8531H8.03125C7.19595 11.8531 6.37602 11.6284 5.6575 11.2024L5.4875 11.1012L3.7225 11.5643L4.19313 9.84368L4.0825 9.66743C3.61549 8.92395 3.36827 8.06355 3.36938 7.18556C3.37063 4.61431 5.4625 2.52243 8.035 2.52243C8.64766 2.52107 9.2545 2.64123 9.82041 2.87596C10.3863 3.11069 10.9 3.45533 11.3319 3.88993C11.766 4.32246 12.1101 4.83674 12.3443 5.40306C12.5785 5.96937 12.6981 6.57648 12.6962 7.18931C12.695 9.76056 10.6031 11.8531 8.03313 11.8531ZM10.5912 8.35993C10.4506 8.28931 9.76188 7.95056 9.63312 7.90368C9.505 7.85681 9.41188 7.83368 9.31813 7.97368C9.22438 8.11368 8.95563 8.42931 8.87375 8.52306C8.79187 8.61681 8.71 8.62806 8.57 8.55806C8.43 8.48806 7.97813 8.33993 7.4425 7.86243C7.02562 7.49056 6.74437 7.03181 6.6625 6.89118C6.58062 6.75056 6.65375 6.67493 6.72437 6.60493C6.7875 6.54243 6.86438 6.44118 6.93437 6.35931C7.00437 6.27743 7.0275 6.21931 7.07438 6.12556C7.12125 6.03181 7.09812 5.94993 7.0625 5.87993C7.0275 5.80931 6.74687 5.11931 6.63 4.83868C6.51687 4.56681 6.40125 4.60306 6.315 4.59931C6.22567 4.59565 6.13628 4.59399 6.04688 4.59431C5.97578 4.59612 5.90584 4.6126 5.84141 4.64271C5.77699 4.67283 5.71948 4.71592 5.6725 4.76931C5.54375 4.90993 5.18188 5.24868 5.18188 5.93868C5.18188 6.62868 5.68437 7.29556 5.75437 7.38931C5.82437 7.48306 6.74312 8.89868 8.14937 9.50618C8.48438 9.65056 8.74563 9.73681 8.94875 9.80181C9.28437 9.90868 9.59 9.89306 9.83187 9.85743C10.1012 9.81743 10.6613 9.51868 10.7781 9.19118C10.895 8.86368 10.895 8.58306 10.86 8.52431C10.825 8.46556 10.7306 8.42993 10.5912 8.35993Z" fill="white"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a class="social__btn telegram" href="#">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4159 2.53005L2.33462 6.63225C1.57837 6.92385 1.58274 7.32885 2.19587 7.50945L5.04087 8.36145L11.6234 4.37445C11.9346 4.19265 12.219 4.29045 11.9852 4.48965L6.65212 9.11025H6.65087L6.65212 9.11085L6.45587 11.9261C6.74337 11.9261 6.87024 11.7995 7.03149 11.6501L8.41337 10.3601L11.2877 12.3983C11.8177 12.6785 12.1984 12.5345 12.3302 11.9273L14.2171 3.39045C14.4102 2.64705 13.9215 2.31045 13.4159 2.53005Z" fill="white"/>
+                        </svg>
+                        Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container_wraper-nav">
+            <div class="wraper-nav__nav flex">
+                <nav class="nav__links">
+                    <ul class="links__nav-item">
+                        <li class="nav-item__item parent-nav"><a href="#">О клинике</a></li>
+                        <li class="nav-item__item parent-nav level-0">Наши услуги
+                            <ul class="links__nav-item">
+                                <li class="nav-item__item parent-nav level-1"><a href="#">Алкоголизм</a>
+                                    <ul class="links__nav-item">
+                                        <li class="nav-item__item"><a href="#">Вывод из запоя</a></li>
+                                        <li class="nav-item__item"><a href="#">Капельница от запоя</a></li>
+                                        <li class="nav-item__item"><a href="#">Капельница от похмелья</a></li>
+                                        <li class="nav-item__item"><a href="#">Женский алкоголизм</a></li>
+                                        <li class="nav-item__item"><a href="#">Пивной алкоголизм</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Торпедо</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Двойной блок</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Эспераль</a></li>
+                                        <li class="nav-item__item"><a href="#">Частный вытрезвитель</a></li>
+                                        <li class="nav-item__item"><a href="#">Реабилитация алкоголиков</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item__item parent-nav level-1"><a href="#">Наркомания</a>
+                                    <ul class="links__nav-item">
+                                        <li class="nav-item__item"><a href="#">УБОД</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от экстази</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от героина</a></li>
+                                        <li class="nav-item__item"><a href="#">Помощь при передозировке</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование от наркотиков</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение гипнозом</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от марихуаны</a></li>
+                                        <li class="nav-item__item"><a href="#">Принудительная терапия</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item__item parent-nav level-1"><a href="#">Психитария</a>
+                                </li>
+                                <li class="nav-item__item"><a href="#">Наркология</a></li>
+                                <li class="nav-item__item"><a href="#">Алкоголизм</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item__item"><a href="#">Цены</a></li>
+                        <li class="nav-item__item"><a href="#">Лицензии</a></li>
+                        <li class="nav-item__item"><a href="#">Фотогалерея</a></li>
+                        <li class="nav-item__item"><a href="#">Акции</a></li>
+                        <li class="nav-item__item"><a href="#">Отзывы</a></li>
+                        <li class="nav-item__item"><a href="#">Вопрос-ответ</a></li>
+                        <li class="nav-item__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="wraper__top-search">
+                    <input class="top-search" type="search" placeholder="Поиск">
+                </div>
+            </div>
+        </div>
+        <div class="header__container-mobile container-wraper-mobile">
+            <div class="container-wraper-mobile__logo"><img class="logo__images" src="assets/img/icons/logo_mobile.png" alt="Логотип"></div>
+            <div class="container-wraper-mobile__items">
+                <div class="items__contact">
+                    <a class="contact__phone phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <a class="contact__phone phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <span class="contact__grafik">Круглосуточно 24/7</span>
+                </div>
+                <div class="items__nav">
+                    <div class="burger__menu">
+                        <span class="menu_buttom"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="wraper__breadcrumb">
+            <div class="breadcrumb__conteiner">
+                <ul class="conteiner__breadcrumbs">
+                    <li class="conteiner__breadcrumb"><a href="#">Главная</a></li>
+                    <span class="conteiner__breadcrumb-separator"></span>
+                    <li class="conteiner__breadcrumb"><span>Цены</span></li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <div class="wraper__mobile">
+        <div class="wraper__mobile-menu">
+            <div class="mobile-menu__container">
+                <div class="container-top">
+                    <div class="container-wraper-mobile__logo">
+                        <img class="logo__images" src="assets/img/icons/logo_mobile.png" alt="Логотип">
+                    </div>
+                    <span class="logo__certificate header-text">Лицензия: Л041-01050-61/0034798</span>
+                    <span class="logo__grafick">График работы: круглосуточно</span>
+                </div>
+                <div class="container-nav">
+                    <ul class="nav__mobile nav-items">
+                        <li class="nav-item__item parent-nav"><a href="">О клинике</a></li>
+                        <li class="nav-item__item parent-nav mobile-level-0"><span class="separator">Наши услуги</span><button class="parent__menu"></button>
+                            <ul class="links__nav-item">
+                                <li class="nav-item__item parent-nav mobile-level-1"><a href="#">Алкоголизм</a>
+                                    <ul class="links__nav-item">
+                                        <li class="nav-item__item"><a href="#">Вывод из запоя</a></li>
+                                        <li class="nav-item__item"><a href="#">Капельница от запоя</a></li>
+                                        <li class="nav-item__item"><a href="#">Капельница от похмелья</a></li>
+                                        <li class="nav-item__item"><a href="#">Женский алкоголизм</a></li>
+                                        <li class="nav-item__item"><a href="#">Пивной алкоголизм</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Торпедо</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Двойной блок</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование Эспераль</a></li>
+                                        <li class="nav-item__item"><a href="#">Частный вытрезвитель</a></li>
+                                        <li class="nav-item__item"><a href="#">Реабилитация алкоголиков</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item__item parent-nav mobile-level-1"><a href="#">Наркомания</a>
+                                    <ul class="links__nav-item">
+                                        <li class="nav-item__item"><a href="#">УБОД</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от экстази</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от героина</a></li>
+                                        <li class="nav-item__item"><a href="#">Помощь при передозировке</a></li>
+                                        <li class="nav-item__item"><a href="#">Кодирование от наркотиков</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение гипнозом</a></li>
+                                        <li class="nav-item__item"><a href="#">Лечение от марихуаны</a></li>
+                                        <li class="nav-item__item"><a href="#">Принудительная терапия</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item__item parent-nav mobile-level-1"><a href="#">Психитария</a></li>
+                                <li class="nav-item__item"><a href="#">Наркология</a></li>
+                                <li class="nav-item__item"><a href="#">Алкоголизм</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item__item"><a href="#">Цены</a></li>
+                        <li class="nav-item__item"><a href="#">Лицензии</a></li>
+                        <li class="nav-item__item"><a href="#">Фотогалерея</a></li>
+                        <li class="nav-item__item"><a href="#">Акции</a></li>
+                        <li class="nav-item__item"><a href="#">Отзывы</a></li>
+                        <li class="nav-item__item"><a href="#">Вопрос-ответ</a></li>
+                        <li class="nav-item__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="container__buttom">
+                    <div class="wraper__top-search">
+                        <input class="top-search" type="search" placeholder="Поиск">
+                    </div>
+                    <a class="phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <a class="phone_link" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <span class="contact__sub-title addres header-text">
+                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.19C5.37588 6.19 6.1006 5.514 6.1006 4.697C6.1006 3.88 5.37588 3.204 4.5 3.204C3.62412 3.204 2.8994 3.88 2.8994 4.697C2.8994 5.514 3.62412 6.19 4.5 6.19ZM4.5 0.5C7.00649 0.5 9 2.359 9 4.6975C9 7.8525 4.5 12.5 4.5 12.5C4.5 12.5 0 7.852 0 4.6975C0 2.3595 1.99297 0.5 4.5 0.5Z" fill="#32D583"></path>
+                        </svg>
+                        Адрес контакт-центра
+                    </span>
+                    <span class="contact__sub-title addres header-text">
+                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.19C5.37588 6.19 6.1006 5.514 6.1006 4.697C6.1006 3.88 5.37588 3.204 4.5 3.204C3.62412 3.204 2.8994 3.88 2.8994 4.697C2.8994 5.514 3.62412 6.19 4.5 6.19ZM4.5 0.5C7.00649 0.5 9 2.359 9 4.6975C9 7.8525 4.5 12.5 4.5 12.5C4.5 12.5 0 7.852 0 4.6975C0 2.3595 1.99297 0.5 4.5 0.5Z" fill="#32D583"></path>
+                        </svg>  
+                        г.Ростов-на-Дону, ул. Крауля 56
+                    </span>
+                </div>
+                <div class="container__menu-close">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="40" height="40" rx="20" fill="#0185CA"/>
+                        <path d="M21.4099 19.9991L27.7099 13.7091C27.8982 13.5208 28.004 13.2654 28.004 12.9991C28.004 12.7328 27.8982 12.4775 27.7099 12.2891C27.5216 12.1008 27.2662 11.9951 26.9999 11.9951C26.7336 11.9951 26.4782 12.1008 26.2899 12.2891L19.9999 18.5891L13.7099 12.2891C13.5216 12.1008 13.2662 11.9951 12.9999 11.9951C12.7336 11.9951 12.4782 12.1008 12.2899 12.2891C12.1016 12.4775 11.9958 12.7328 11.9958 12.9991C11.9958 13.2654 12.1016 13.5208 12.2899 13.7091L18.5899 19.9991L12.2899 26.2891C12.1962 26.3821 12.1218 26.4927 12.071 26.6146C12.0203 26.7364 11.9941 26.8671 11.9941 26.9991C11.9941 27.1312 12.0203 27.2619 12.071 27.3837C12.1218 27.5056 12.1962 27.6162 12.2899 27.7091C12.3829 27.8029 12.4935 27.8773 12.6154 27.928C12.7372 27.9788 12.8679 28.0049 12.9999 28.0049C13.132 28.0049 13.2627 27.9788 13.3845 27.928C13.5064 27.8773 13.617 27.8029 13.7099 27.7091L19.9999 21.4091L26.2899 27.7091C26.3829 27.8029 26.4935 27.8773 26.6154 27.928C26.7372 27.9788 26.8679 28.0049 26.9999 28.0049C27.132 28.0049 27.2627 27.9788 27.3845 27.928C27.5064 27.8773 27.617 27.8029 27.7099 27.7091C27.8037 27.6162 27.8781 27.5056 27.9288 27.3837C27.9796 27.2619 28.0057 27.1312 28.0057 26.9991C28.0057 26.8671 27.9796 26.7364 27.9288 26.6146C27.8781 26.4927 27.8037 26.3821 27.7099 26.2891L21.4099 19.9991Z" fill="white"/>
+                    </svg>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="section__main main-price">
+            <div class="main__container price container">
+                <h2 class="container__title-h2">Цены</h2>
+                <p class="container__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="container-wraper">
+                    <ul class="price-panel nav-tabs">
+                        <li class="nav-tab active" data-tab="1">Лечение алкоголизма</li>
+                        <li class="nav-tab" data-tab="2">Лечение наркомании</li>
+                        <li class="nav-tab" data-tab="3">Психиатрия</li>
+                        <li class="nav-tab" data-tab="4">Реабилитация</li>
+                        <li class="nav-tab" data-tab="5">Наркология</li>
+                    </ul>
+                    <div class="price-item tab-panel active" data-tab-content="1">
+                        <div class="table-services__wrapper">
+                            <div class="table-services__row table-services__row--header table-services__row--title">
+                            <div class="table-services__cell">Услуга</div>
+                            <div class="table-services__cell services_price_title">Цена</div>
+                            <div class="table-services__cell"></div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-item tab-panel" data-tab-content="2">
+                        <div class="table-services__wrapper">
+                            <div class="table-services__row table-services__row--header table-services__row--title">
+                            <div class="table-services__cell">Услуга</div>
+                            <div class="table-services__cell services_price_title">Цена</div>
+                            <div class="table-services__cell"></div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-item tab-panel" data-tab-content="3">
+                        <div class="table-services__wrapper">
+                            <div class="table-services__row table-services__row--header table-services__row--title">
+                            <div class="table-services__cell">Услуга</div>
+                            <div class="table-services__cell services_price_title">Цена</div>
+                            <div class="table-services__cell"></div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-item tab-panel" data-tab-content="4">
+                        <div class="table-services__wrapper">
+                            <div class="table-services__row table-services__row--header table-services__row--title">
+                            <div class="table-services__cell">Услуга</div>
+                            <div class="table-services__cell services_price_title">Цена</div>
+                            <div class="table-services__cell"></div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-item tab-panel" data-tab-content="5">
+                        <div class="table-services__wrapper">
+                            <div class="table-services__row table-services__row--header table-services__row--title">
+                            <div class="table-services__cell">Услуга</div>
+                            <div class="table-services__cell services_price_title">Цена</div>
+                            <div class="table-services__cell"></div>
+                            </div>
+                            <div class="table-services__row">
+                                <div class="table-services__cell-mob">Услуга</div>
+                                <div class="table-services__cell services_title">Капельница базовая</div>
+                                <div class="table-services__cell-mob services_price_title">Цена</div>
+                                <div class="table-services__cell services_price">4200 ₽</div>
+                                <div class="table-services__cell-mob"></div>
+                                <div class="table-services__cell services_button button__price">
+                                    <button class="button__blue deskop">Заказать услугу</button>
+                                    <button class="standart-btn btn mobile">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container__form appeal">
+            <div class="form__wraper">
+                <div class="wraper">
+                    <div class="form__content">
+                        <h2 class="content__form-title-h2"><span class="blak">Не откладывайте на потом</span></h2>
+                        <p class="content__form-subtitle">Осложнения от запущенных болезней приводят к смерти</p>
+                    </div>
+                    <div class="form">
+                        <form class="form__input-container">
+                            <div class="form__input"><input type="text" required="" placeholder="Ваше имя"></div>
+                            <div class="form__input phone"><input class="phone__input" type="tel" required="" placeholder="+7 (___) ___-__-__"></div>
+                            <div class="container__select">
+                                <select class="form__input" name="problem">
+                                    <option value="problem">Как давно появилась проблема</option>
+                                    <option value="problem">Как давно появилась проблема</option>
+                                </select>
+                            </div>
+                            <div class="container__select">
+                                <select class="form__input" name="age">
+                                    <option value="age">Возраст пациента</option>
+                                    <option value="age">Возраст пациента</option>
+                                </select>
+                            </div>
+                            <div class="container__select">
+                                <select class="form__input" name="age">
+                                    <option value="age">Хронические заболевания</option>
+                                    <option value="age">Хронические заболевания</option>
+                                </select>
+                            </div>
+                            <button class="button__blue">Заказать звонок</button>
+                            <input name="f_clientID" type="hidden" value="false">
+                        </form>
+                        <span class="form__politics">*Передавая информацию сайту, Вы принимаете условия политики защиты персональной информации</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section__main main-map">
+            <div class="main__container map container">
+                <img src="assets/img/about/map-wraper.webp" alt="Карта">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class=" wraper__footer-grid">
+            <div class="footer-grid__column grid">
+                <div class="column__item">
+                    <img class="item__logo" src="assets/img/icons/logo.png" alt="Логотип">
+                    <p class="item__text">ООО «ЮгЭкоСервис+» ИНН 6161094681/616301001 ОГРН 1216100020718 Лицензия Л041-01050-61/00347983 от 28.12.2021</p>
+                    <p class="item__text">Лицензия: Л041-01050-61/0034798</p>
+                </div>
+                <div class="column__item">
+                    <span class="item__title-column-footer">Телефоны:</span>
+                    <a class="item__phone text-weight" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <a class="item__phone text-weight" href="tel:+75555555555">+7 (555) 555-55-55</a>
+                    <span class="social_buttons">
+                        <a class="social__btn whatsApp" href="#">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0019 3.22056C11.4821 2.69736 10.8637 2.2825 10.1824 2.00002C9.50116 1.71754 8.77062 1.57306 8.03313 1.57493C4.94063 1.57493 2.42313 4.09181 2.42188 7.18556C2.42188 8.17431 2.68 9.13931 3.17062 9.99056L2.375 12.8974L5.34937 12.1168C6.17212 12.5647 7.09387 12.7995 8.03062 12.7999H8.03313C11.125 12.7999 13.6425 10.2831 13.6438 7.18931C13.6459 6.45211 13.5019 5.7218 13.22 5.04059C12.9382 4.35939 12.5242 3.74079 12.0019 3.22056ZM8.03313 11.8531H8.03125C7.19595 11.8531 6.37602 11.6284 5.6575 11.2024L5.4875 11.1012L3.7225 11.5643L4.19313 9.84368L4.0825 9.66743C3.61549 8.92395 3.36827 8.06355 3.36938 7.18556C3.37063 4.61431 5.4625 2.52243 8.035 2.52243C8.64766 2.52107 9.2545 2.64123 9.82041 2.87596C10.3863 3.11069 10.9 3.45533 11.3319 3.88993C11.766 4.32246 12.1101 4.83674 12.3443 5.40306C12.5785 5.96937 12.6981 6.57648 12.6962 7.18931C12.695 9.76056 10.6031 11.8531 8.03313 11.8531ZM10.5912 8.35993C10.4506 8.28931 9.76188 7.95056 9.63312 7.90368C9.505 7.85681 9.41188 7.83368 9.31813 7.97368C9.22438 8.11368 8.95563 8.42931 8.87375 8.52306C8.79187 8.61681 8.71 8.62806 8.57 8.55806C8.43 8.48806 7.97813 8.33993 7.4425 7.86243C7.02562 7.49056 6.74437 7.03181 6.6625 6.89118C6.58062 6.75056 6.65375 6.67493 6.72437 6.60493C6.7875 6.54243 6.86438 6.44118 6.93437 6.35931C7.00437 6.27743 7.0275 6.21931 7.07438 6.12556C7.12125 6.03181 7.09812 5.94993 7.0625 5.87993C7.0275 5.80931 6.74687 5.11931 6.63 4.83868C6.51687 4.56681 6.40125 4.60306 6.315 4.59931C6.22567 4.59565 6.13628 4.59399 6.04688 4.59431C5.97578 4.59612 5.90584 4.6126 5.84141 4.64271C5.77699 4.67283 5.71948 4.71592 5.6725 4.76931C5.54375 4.90993 5.18188 5.24868 5.18188 5.93868C5.18188 6.62868 5.68437 7.29556 5.75437 7.38931C5.82437 7.48306 6.74312 8.89868 8.14937 9.50618C8.48438 9.65056 8.74563 9.73681 8.94875 9.80181C9.28437 9.90868 9.59 9.89306 9.83187 9.85743C10.1012 9.81743 10.6613 9.51868 10.7781 9.19118C10.895 8.86368 10.895 8.58306 10.86 8.52431C10.825 8.46556 10.7306 8.42993 10.5912 8.35993Z" fill="white"></path>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a class="social__btn telegram" href="#">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4159 2.53005L2.33462 6.63225C1.57837 6.92385 1.58274 7.32885 2.19587 7.50945L5.04087 8.36145L11.6234 4.37445C11.9346 4.19265 12.219 4.29045 11.9852 4.48965L6.65212 9.11025H6.65087L6.65212 9.11085L6.45587 11.9261C6.74337 11.9261 6.87024 11.7995 7.03149 11.6501L8.41337 10.3601L11.2877 12.3983C11.8177 12.6785 12.1984 12.5345 12.3302 11.9273L14.2171 3.39045C14.4102 2.64705 13.9215 2.31045 13.4159 2.53005Z" fill="white"></path>
+                            </svg>
+                            Telegram
+                        </a>
+                    </span>
+                </div>
+                <div class="column__item">
+                    <span class="item__title-column-footer">Адрес:</span>
+                    <span class="item__text text-weight">г. Екатеринбург, ул. Крауля 56</span>
+                    <span class="item__text text-weight">г. Екатеринбург, ул. Крауля 56</span>
+                    <a class="standart-btn btn" href="#">Построить маршрут</a>
+                </div>
+                <div class="column__item content">
+                    <span class="item__title-column-footer">Часы работы:</span>
+                    <ul>
+                        <li class="item__text text-weight">Круглосуточно</li>
+                    </ul>
+                </div>
+                <div class="column__item">
+                    <span class="item__title-column-footer">E-mail:</span>
+                    <span class="item__text text-weight">info@new-resource.clinic</span>
+                </div>
+            </div>
+            <div class="footer-grid__column grid">
+                <div class="column__item nav">
+                    <div class="item__title-column-footer text-weight">Навигация<span class="title-icon"></span></div>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#">О компании</a></li>
+                        <li class="nav__item"><a href="#">Акции</a></li>
+                        <li class="nav__item"><a href="#">Цены</a></li>
+                        <li class="nav__item"><a href="#">Врачи</a></li>
+                        <li class="nav__item"><a href="#">Лицензии</a></li>
+                        <li class="nav__item"><a href="#">Отзывы</a></li>
+                        <li class="nav__item"><a href="#">Наши филиалы</a></li>
+                        <li class="nav__item"><a href="#">Статьи</a></li>
+                        <li class="nav__item"><a href="#">Вопрос-ответ</a></li>
+                        <li class="nav__item"><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                <div class="column__item nav">
+                    <div class="item__title-column-footer text-weight">Алкоголизм<span class="title-icon"></span></div>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#">Вывод из запоя</a></li>
+                        <li class="nav__item"><a href="#">Капельница от запоя</a></li>
+                        <li class="nav__item"><a href="#">Капельница от похмелья</a></li>
+                        <li class="nav__item"><a href="#">Женский алкоголизм</a></li>
+                        <li class="nav__item"><a href="#">Пивной алкоголизм</a></li>
+                        <li class="nav__item"><a href="#">Кодирование Торпедо</a></li>
+                        <li class="nav__item"><a href="#">Кодирование Двойной блок</a></li>
+                        <li class="nav__item"><a href="#">Кодирование Эспераль</a></li>
+                        <li class="nav__item"><a href="#">Частный вытрезвитель</a></li>
+                        <li class="nav__item"><a href="#">Реабилитация алкоголиков</a></li>
+                    </ul>
+                </div>
+                <div class="column__item nav">
+                    <div class="item__title-column-footer text-weight">Наркомания<span class="title-icon"></span></div>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#">УБОД</a></li>
+                        <li class="nav__item"><a href="#">Лечение от экстази</a></li>
+                        <li class="nav__item"><a href="#">Лечение от героина</a></li>
+                        <li class="nav__item"><a href="#">Помощь при передозировке</a></li>
+                        <li class="nav__item"><a href="#">Кодирование от наркотиков</a></li>
+                        <li class="nav__item"><a href="#">Лечение гипнозом</a></li>
+                        <li class="nav__item"><a href="#">Лечение от марихуаны</a></li>
+                        <li class="nav__item"><a href="#">Принудительная терапия</a></li>
+                        <li class="nav__item"><a href="#">Реабилитация наркоманов</a></li>
+                    </ul>
+                </div>
+                <div class="column__item nav">
+                    <div class="item__title-column-footer text-weight">Психитария<span class="title-icon"></span></div>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#">Психиатр на дом</a></li>
+                        <li class="nav__item"><a href="#">Синдром Туретта</a></li>
+                        <li class="nav__item"><a href="#">Лечение от героина</a></li>
+                        <li class="nav__item"><a href="#">Лечение неврастении</a></li>
+                        <li class="nav__item"><a href="#">Лечение анорексии</a></li>
+                        <li class="nav__item"><a href="#">Лечение булимии</a></li>
+                        <li class="nav__item"><a href="#">Лечение депрессии</a></li>
+                        <li class="nav__item"><a href="#">Панические атаки</a></li>
+                        <li class="nav__item"><a href="#">Тревожное расстройство</a></li>
+                        <li class="nav__item"><a href="#">Биполярное расстройство</a></li>
+                        <li class="nav__item"><a href="#">Лечение паранойи</a></li>
+                    </ul>
+                </div>
+                <div class="column__item nav">
+                    <div class="item__title-column-footer text-weight">Наркология<span class="title-icon"></span></div>
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#">Нарколог на дом</a></li>
+                        <li class="nav__item"><a href="#">Лечение игромании</a></li>
+                        <li class="nav__item"><a href="#">Лечение интернет-зависимости</a></li>
+                        <li class="nav__item"><a href="#">Лечение от ставок на спорт</a></li>
+                        <li class="nav__item"><a href="#">Реабилитация 12 шагов</a></li>
+                        <li class="nav__item"><a href="#">Реабилитация Day Top</a></li>
+                        <li class="nav__item"><a href="#">Лечение похмелья</a></li>
+                        <li class="nav__item"><a href="#">Детоксикация от алкоголя</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-grid__entitlement flex">
+                <p>@ 2024 | Информация, предоставляемая на сайте предназначена для поддержки, а не для замещения существующих отношений между пациентом и лечащим врачом. Все права на сайт принадлежат частной коммерческой компании. На сайте не размещается реклама. Сайт использует cookies</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
